@@ -1,5 +1,6 @@
 package com.oddcodes.wechat.factory;
 
+import com.oddcodes.wechat.api.pay.Coupon;
 import com.oddcodes.wechat.api.pay.ISVH5;
 import com.oddcodes.wechat.api.pay.ISVJSAPI;
 import com.oddcodes.wechat.api.pay.ISVNative;
@@ -36,5 +37,9 @@ public class PayFactory {
 
     public ISVRefund ISVRefund(){
         return new ISVRefund(config);
+    }
+
+    public Coupon Coupon(){
+        return new Coupon(config);
     }
 }

@@ -78,6 +78,4 @@ public class Main {
 | 微信支付（PayFactory）  | ISVNative | create | 服务商Native下单 |
 | 微信支付（PayFactory）  | ISVH5 | create | 服务商H5下单 |
 | 微信支付（PayFactory）  | ISVRefund | refund | 服务商退款申请 |
-
-
-
+| 微信支付（PayFactory）  | Coupon | send | 发放优惠券 |
