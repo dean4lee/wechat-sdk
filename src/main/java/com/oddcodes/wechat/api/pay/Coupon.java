@@ -34,8 +34,8 @@ public class Coupon {
                 .put("stock_creator_mchid", config.getMchid());
 
         String StringBody = body.toJSONString();
-        String token = payUtil.getV3Token(HttpPost.METHOD_NAME, SEND_URL, StringBody);
-        String result = HttpUtil.v3Post(config.getHost() + SEND_URL, StringBody, token);
+        String token = payUtil.getV3Token(HttpPost.METHOD_NAME, url, StringBody);
+        String result = HttpUtil.v3Post(config.getHost() + url, StringBody, token);
 
         return JSON.parseObject(result, CouponSendResponse.class);
     }
